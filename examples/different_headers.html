@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Types</title>
+    <style>
+        .header {
+            background-color: tan;
+            border: 3px solid black;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 0 10px;
+        }
+
+        /* this one will grow as the page grows and shrink as the page shrinks but will have some margin on the ends always */
+        #header1 {
+            margin: 0 40px;
+        }
+
+        /* this one is compound, where the outer shell always is the full page width but the inner one is smaller. This here just centers the inner component */
+        #header2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* the max width prevents it from growing past 800px the width: 100% means it will try to grow as much as possible so flex won't shrink it to fit the contents */
+        #header2 section {
+            max-width: 800px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header1">
+        <h1>Title Of Page</h1>
+        <nav>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+                <li>Item4</li>
+            </ul>
+        </nav>
+    </header>
+
+    <header id="header2">
+        <section class="header">
+            <h1>Title Of Page</h1>
+            <nav>
+                <ul>
+                    <li>Item1</li>
+                    <li>Item2</li>
+                    <li>Item3</li>
+                    <li>Item4</li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+</body>
+</html>
