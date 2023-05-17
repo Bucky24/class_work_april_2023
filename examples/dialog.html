@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popupOuter {
+            display: none;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: #99999955;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popupInner {
+            min-width: 300px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popupOuter">
+        <div class="popupInner">
+            Popup Content
+        </div>
+    </div>
+    <button id="myButton">
+        Show Popup
+    </button>
+    <script>
+        var button = document.getElementById("myButton");
+        var popup = document.querySelector(".popupOuter");
+
+        button.addEventListener("click", function() {
+            popup.style.display = "flex";
+        });
+    </script>
+</body>
+</html>
