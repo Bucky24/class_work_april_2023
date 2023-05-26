@@ -1,0 +1,7 @@
+tr.pastdue {
+    background-color: red;
+}
+
+tr.duetoday {
+    background-color: yellow;
+}
