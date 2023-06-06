@@ -8,17 +8,8 @@ form.addEventListener("submit", function(event) {
     var query = querySearch.value;
     var format = formatDropdown.value;
 
-    queryTheBigGuysUpTop(query, format);
+    var newUrl = "./results.html?query=" + query + "&format=" + format;
+    window.location.replace(newUrl);
+
+    //queryTheBigGuysUpTop(query, format);
 });
-
-function queryTheBigGuysUpTop(query, format) {
-    var url = "https://www.loc.gov/search?q=" + query + "&fo=" + format;
-
-    fetch(url).then(function (result) {
-        if (result.ok) {
-            result.json().then(function (data) {
-                console.log(data);
-            });
-        }
-    });
-}
