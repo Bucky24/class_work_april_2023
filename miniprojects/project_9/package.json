@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-generator",
+  "version": "0.1.0",
+  "description": "This does challenge 2 for you woo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "javascript",
+    "fun"
+  ],
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
