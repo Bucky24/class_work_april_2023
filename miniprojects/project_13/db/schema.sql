@@ -1,0 +1,2 @@
+drop database if exists super_fun_time_happy_place_db;
+create database super_fun_time_happy_place_db;
