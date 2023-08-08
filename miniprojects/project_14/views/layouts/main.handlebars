@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .project_card {
+            background-color: orange;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        a:has(.project_card) {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        {{#unless logged_in}}
+            <button id="loginButton">Login</button>
+        {{/unless}}
+    </header>
+    {{{ body }}}
+    <script src="./js/main.js"></script>
+</body>
+</html>
