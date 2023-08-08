@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal_outer {
+            display: none;
+            background-color: rgba(128, 128, 128, 0.5);
+            z-index: 10;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modal_inner {
+            background-color: white;
+            padding: 10px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal_outer">
+        <div id="modal_inner">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+                <br/>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    <a href="#" id="login_link">Login Now</a>
+    <script>
+        function closeModal() {
+            document.getElementById("modal_outer").style.display = "none";
+        }
+
+        document.getElementById("login_link").addEventListener("click", (e) => {
+            e.preventDefault();
+
+            document.getElementById("modal_outer").style.display = "flex";
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            closeModal();
+        });
+
+        document.getElementById("modal_outer").addEventListener("click", () => {
+            closeModal();
+        });
+
+        document.getElementById("modal_inner").addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
