@@ -1,0 +1,20 @@
+{
+  "name": "mini-project-develop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "concurrently 'cd client ; npm start' 'cd server ; npm run server'",
+    "start": "cd server ; npm run server",
+    "server": "",
+    "build:dev": "cd client ; npm run build",
+    "install": "echo 'Installing server' ; cd server ; npm install ; echo 'Installing client' ;  cd ../client ; npm install",
+    "client": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.a17fc6d19176b35b63cd3a349db17e1a.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.c5ddb2d495ca5276633021b4abf2bbf6.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.dae21f7ac466dfee49090534fbfdf6ba.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.4a5d9bdf1c3ce4345b68e717f88b6b22.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.83b3a75e7c54c466728fcb95e842e72e.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.728d768321d433813fe249d5a07488ad.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "TODO FOREVER",
+  "short_name": "COMENT",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "Todos and Coments are the best"
+}
