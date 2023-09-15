@@ -36,6 +36,9 @@ module.exports = {
 				loader: 'css-loader',
 				options: {
 					modules: {
+						// THIS IS THE BIG LINE HERE this is what makes it all work
+						// this changes all class names in css to have a ranodom hash
+						// so you don't get clash of classes in different files
 						localIdentName: "[path][name]__[local]--[hash:base64:5]",
 					},
 				},
